@@ -10,3 +10,6 @@ Supporting a fork of `gb-studio/v2beta` https://github.com/john-lay/gb-studio/tr
 - [ ] Unique spell animations should work on any screen
 - [ ] Animate water and lamp tiles
 - [ ] Implement a save feature
+- [ ] Implement atk/def logic for Zelda and enemies
+- [ ] Show all weapons/treasures over 2 inventory screens
+- [ ] Show collected celestial signs on inventory screen
