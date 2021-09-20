@@ -17,7 +17,10 @@
                 {
                     "id": "7436fdc6-4148-431b-bb8a-3d0cf7a2dfd2",
                     "command": "EVENT_GROUP",
-                    "args": {},
+                    "args": {
+                        "__collapse": true,
+                        "__label": "Initialise global variables"
+                    },
                     "children": {
                         "true": [
                             {
@@ -53,7 +56,7 @@
                                         "type": "number",
                                         "value": 3
                                     },
-                                    "__collapse": true
+                                    "__collapse": false
                                 }
                             },
                             {
@@ -65,7 +68,7 @@
                                         "type": "number",
                                         "value": 3
                                     },
-                                    "__collapse": true
+                                    "__collapse": false
                                 }
                             },
                             {
@@ -77,7 +80,7 @@
                                         "type": "number",
                                         "value": 99
                                     },
-                                    "__collapse": true
+                                    "__collapse": false
                                 }
                             },
                             {
@@ -108,7 +111,7 @@
                         ],
                         "persist": false,
                         "__scriptTabs": "press",
-                        "__collapse": false,
+                        "__collapse": true,
                         "__comment": false,
                         "__label": "Decrement variable"
                     },
@@ -319,7 +322,7 @@
                         ],
                         "persist": false,
                         "__scriptTabs": "press",
-                        "__collapse": false,
+                        "__collapse": true,
                         "__label": "increment value"
                     },
                     "children": {
@@ -820,6 +823,21 @@
                     }
                 },
                 {
+                    "id": "fdbbcd9c-0e0d-453d-89fb-2fcb909e6e8b",
+                    "command": "EVENT_TEXT",
+                    "args": {
+                        "text": [
+                            "Debug controls:\nedit variables\nchanged by custom\nengine",
+                            "1. Old health\n2. Health\n3. Old Max hearts",
+                            "4. Max hearts\n5. Old rupees\n6. Rupees",
+                            "select = print\ncurrent var\nstart = select\nnext variable",
+                            "B = decrement var\nA = increment var"
+                        ],
+                        "avatarId": "",
+                        "__collapse": true
+                    }
+                },
+                {
                     "id": "d3a41db1-d44b-4132-9110-cbb14fdfd663",
                     "command": "EVENT_END"
                 }
@@ -844,7 +862,7 @@
             "imageHeight": 144,
             "filename": "placeholder.png",
             "inode": "562949954800456",
-            "_v": 1631288209661
+            "_v": 1632150616067
         },
         {
             "id": "6a3dc472-8253-47b8-ace9-1c1e66f886c2",
@@ -855,7 +873,7 @@
             "imageHeight": 144,
             "filename": "vision-henge.png",
             "inode": "1125899908221808",
-            "_v": 1631288209661
+            "_v": 1632150616067
         }
     ],
     "spriteSheets": [
@@ -866,7 +884,7 @@
             "type": "actor",
             "filename": "actor.png",
             "inode": "562949954800462",
-            "_v": 1631288209661
+            "_v": 1632150616067
         },
         {
             "id": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
@@ -875,7 +893,7 @@
             "type": "actor_animated",
             "filename": "actor_animated.png",
             "inode": "562949954800463",
-            "_v": 1631288209661
+            "_v": 1632150616067
         },
         {
             "id": "daf95270-e30d-423b-9ee7-990ae29f57f6",
@@ -884,7 +902,7 @@
             "type": "static",
             "filename": "static.png",
             "inode": "562949954800464",
-            "_v": 1631288209661
+            "_v": 1632150616067
         }
     ],
     "palettes": [
@@ -1033,7 +1051,7 @@
             "filename": "template.mod",
             "settings": {},
             "inode": "562949954800459",
-            "_v": 1631288209656
+            "_v": 1632150616056
         }
     ],
     "variables": [
