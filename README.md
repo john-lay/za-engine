@@ -6,13 +6,14 @@ Supporting a fork of `gb-studio/v2beta` https://github.com/john-lay/gb-studio/tr
 ## Features
 - [x] Display a HUD consisting of a rupee counter and hearts remaining
 - [ ] Enhance the game with Audio + sound effects
-- [ ] Zelda maintains horizonal position when navigating east and west (and vertical position for north/south)
+- [x] Zelda maintains horizonal position when navigating east and west (and vertical position for north/south)
 - [ ] Unique spell animations should work on any screen
 - [ ] Animate water and lamp tiles
-- [ ] Implement a save feature
+- [x] Implement a save feature
 - [ ] Implement atk/def logic for Zelda and enemies
-- [ ] Show all weapons/treasures over 2 inventory screens
-- [ ] Show collected celestial signs on inventory screen
+- [x] Show all weapons/treasures over 2 inventory screens
+- [x] Show collected celestial signs on inventory screen
+- [ ] Show Zelda's position in an overworld minimap
 
 ## Debug Controls
 As the fork of GB Studio involves modifying in game variables, a feature to modify them has been created.
