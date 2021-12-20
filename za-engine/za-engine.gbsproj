@@ -850,6 +850,64 @@
             "y": 48,
             "actors": [],
             "triggers": []
+        },
+        {
+            "name": "Scene 2",
+            "backgroundId": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
+            "width": 20,
+            "height": 18,
+            "type": "6",
+            "paletteIds": [],
+            "collisions": [],
+            "tileColors": [],
+            "script": [
+                {
+                    "id": "cce7690b-317e-41dd-817a-8024b841147b",
+                    "command": "EVENT_PLAYER_SET_SPRITE",
+                    "args": {
+                        "spriteSheetId": "16886afa-f563-40a4-99c7-2b2f322c00b8",
+                        "persist": false
+                    }
+                },
+                {
+                    "id": "fd2c7225-6431-4a70-b144-96d2c62d148e",
+                    "command": "EVENT_END"
+                }
+            ],
+            "playerHit1Script": [],
+            "playerHit2Script": [],
+            "playerHit3Script": [],
+            "id": "b930c0b6-9ad8-4b5b-94f6-80ef33ef933a",
+            "x": 149,
+            "y": 238.5,
+            "actors": [],
+            "triggers": [
+                {
+                    "name": "",
+                    "trigger": "walk",
+                    "script": [
+                        {
+                            "id": "54bdcc94-1080-425f-b700-05a63d7cbf34",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "test"
+                                ],
+                                "avatarId": ""
+                            }
+                        },
+                        {
+                            "id": "ee7aad9d-b087-41ed-a2e1-a0fa305ac40a",
+                            "command": "EVENT_END"
+                        }
+                    ],
+                    "id": "44e04ddc-0b2a-4d62-8fde-1e0a10bf7949",
+                    "x": 16,
+                    "y": 2,
+                    "width": 3,
+                    "height": 3
+                }
+            ]
         }
     ],
     "backgrounds": [
@@ -862,7 +920,7 @@
             "imageHeight": 144,
             "filename": "placeholder.png",
             "inode": "562949954800456",
-            "_v": 1632150616067
+            "_v": 1640031541930
         },
         {
             "id": "6a3dc472-8253-47b8-ace9-1c1e66f886c2",
@@ -873,7 +931,7 @@
             "imageHeight": 144,
             "filename": "vision-henge.png",
             "inode": "1125899908221808",
-            "_v": 1632150616067
+            "_v": 1640031541930
         }
     ],
     "spriteSheets": [
@@ -884,7 +942,7 @@
             "type": "actor",
             "filename": "actor.png",
             "inode": "562949954800462",
-            "_v": 1632150616067
+            "_v": 1640031541946
         },
         {
             "id": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
@@ -893,7 +951,16 @@
             "type": "actor_animated",
             "filename": "actor_animated.png",
             "inode": "562949954800463",
-            "_v": 1632150616067
+            "_v": 1640031541930
+        },
+        {
+            "id": "16886afa-f563-40a4-99c7-2b2f322c00b8",
+            "name": "cursor",
+            "numFrames": 2,
+            "type": "animated",
+            "filename": "cursor.png",
+            "inode": "4785074605504002",
+            "_v": 1640031997725
         },
         {
             "id": "daf95270-e30d-423b-9ee7-990ae29f57f6",
@@ -902,7 +969,7 @@
             "type": "static",
             "filename": "static.png",
             "inode": "562949954800464",
-            "_v": 1632150616067
+            "_v": 1640031541932
         }
     ],
     "palettes": [
@@ -1051,7 +1118,7 @@
             "filename": "template.mod",
             "settings": {},
             "inode": "562949954800459",
-            "_v": 1632150616056
+            "_v": 1640031541923
         }
     ],
     "variables": [
@@ -1091,18 +1158,18 @@
         }
     ],
     "settings": {
-        "startSceneId": "ca3eeff0-9585-4e19-9b7f-803570a8f51a",
+        "startSceneId": "b930c0b6-9ad8-4b5b-94f6-80ef33ef933a",
         "playerSpriteSheetId": "581d34d0-9591-4e6e-a609-1d94f203b0cd",
-        "startX": 9,
-        "startY": 9,
+        "startX": 10,
+        "startY": 5,
         "startMoveSpeed": 1,
         "startAnimSpeed": 3,
         "startDirection": "down",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 255,
-        "worldScrollY": 100,
-        "zoom": 300,
+        "worldScrollX": 0,
+        "worldScrollY": 0,
+        "zoom": 200,
         "customColorsEnabled": false,
         "customHead": "",
         "defaultBackgroundPaletteIds": [
