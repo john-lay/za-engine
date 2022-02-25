@@ -37,7 +37,7 @@
                                 "args": {
                                     "sceneId": "b930c0b6-9ad8-4b5b-94f6-80ef33ef933a",
                                     "x": 9,
-                                    "y": 16,
+                                    "y": 13,
                                     "direction": "",
                                     "fadeSpeed": "2"
                                 },
@@ -69,57 +69,14 @@
                     "symbol": "actor_1",
                     "script": [
                         {
-                            "command": "EVENT_IF_VALUE",
+                            "command": "EVENT_TEXT",
                             "args": {
-                                "variable": "11",
-                                "operator": "==",
-                                "comparator": 1,
-                                "__collapseElse": true,
-                                "__disableElse": true,
-                                "__collapse": true
-                            },
-                            "children": {
-                                "true": [
-                                    {
-                                        "command": "EVENT_TEXT",
-                                        "args": {
-                                            "text": [
-                                                "1. Wand"
-                                            ],
-                                            "avatarId": ""
-                                        },
-                                        "id": "1e0d349d-da3f-4b26-909c-25bb8185d6a6"
-                                    }
+                                "text": [
+                                    "Equip. $11$"
                                 ],
-                                "false": []
+                                "avatarId": ""
                             },
-                            "id": "e14e25db-0b0f-4575-b79f-c21442a264fa"
-                        },
-                        {
-                            "command": "EVENT_IF_VALUE",
-                            "args": {
-                                "variable": "11",
-                                "operator": "==",
-                                "comparator": 10,
-                                "__collapseElse": true,
-                                "__disableElse": true
-                            },
-                            "children": {
-                                "true": [
-                                    {
-                                        "command": "EVENT_TEXT",
-                                        "args": {
-                                            "text": [
-                                                "10. Jade Amulet"
-                                            ],
-                                            "avatarId": ""
-                                        },
-                                        "id": "e069cca1-c322-465f-a497-0fd0803b83ac"
-                                    }
-                                ],
-                                "false": []
-                            },
-                            "id": "1329843b-164b-4b61-a8db-d6643e18f3a6"
+                            "id": "e069cca1-c322-465f-a497-0fd0803b83ac"
                         }
                     ],
                     "startScript": [],
@@ -186,196 +143,8 @@
             "playerHit3Script": [],
             "id": "b930c0b6-9ad8-4b5b-94f6-80ef33ef933a",
             "x": 256.5,
-            "y": 225.5,
-            "actors": [
-                {
-                    "name": "Cursor",
-                    "frame": 0,
-                    "animate": false,
-                    "spriteSheetId": "c6c5c753-5c40-4111-b678-62201f6fb861",
-                    "direction": "down",
-                    "moveSpeed": 1,
-                    "animSpeed": 15,
-                    "paletteId": "",
-                    "isPinned": false,
-                    "collisionGroup": "",
-                    "symbol": "actor_0",
-                    "script": [],
-                    "startScript": [
-                        {
-                            "command": "EVENT_SWITCH",
-                            "args": {
-                                "variable": "12",
-                                "choices": 6,
-                                "__collapseCase0": false,
-                                "value0": 1,
-                                "__collapseCase1": false,
-                                "value1": 2,
-                                "__collapseCase2": false,
-                                "value2": 3,
-                                "__collapseCase3": false,
-                                "value3": 4,
-                                "__collapseCase4": false,
-                                "value4": 5,
-                                "__collapseCase5": false,
-                                "value5": 6,
-                                "__collapseCase6": false,
-                                "value6": 7,
-                                "__collapseCase7": false,
-                                "value7": 8,
-                                "__collapseCase8": false,
-                                "value8": 9,
-                                "__collapseCase9": false,
-                                "value9": 10,
-                                "__collapseCase10": false,
-                                "value10": 11,
-                                "__collapseCase11": false,
-                                "value11": 12,
-                                "__collapseCase12": false,
-                                "value12": 13,
-                                "__collapseCase13": false,
-                                "value13": 14,
-                                "__collapseCase14": false,
-                                "value14": 15,
-                                "__collapseCase15": false,
-                                "value15": 16,
-                                "__collapseElse": false
-                            },
-                            "children": {
-                                "true0": [
-                                    {
-                                        "command": "EVENT_ACTOR_SET_POSITION",
-                                        "args": {
-                                            "actorId": "$self$",
-                                            "x": {
-                                                "type": "number",
-                                                "value": 4
-                                            },
-                                            "y": {
-                                                "type": "number",
-                                                "value": 16
-                                            }
-                                        },
-                                        "id": "3e0558f9-2030-490b-93a4-34a153eacc57"
-                                    }
-                                ],
-                                "true1": [
-                                    {
-                                        "command": "EVENT_ACTOR_SET_POSITION",
-                                        "args": {
-                                            "actorId": "$self$",
-                                            "x": {
-                                                "type": "number",
-                                                "value": 6
-                                            },
-                                            "y": {
-                                                "type": "number",
-                                                "value": 16
-                                            }
-                                        },
-                                        "id": "decc7ee6-c69c-4712-a7ab-dba8eef106b0"
-                                    }
-                                ],
-                                "true2": [
-                                    {
-                                        "command": "EVENT_ACTOR_SET_POSITION",
-                                        "args": {
-                                            "actorId": "$self$",
-                                            "x": {
-                                                "type": "number",
-                                                "value": 8
-                                            },
-                                            "y": {
-                                                "type": "number",
-                                                "value": 16
-                                            }
-                                        },
-                                        "id": "39b98668-5282-41df-9688-2367b396d402"
-                                    }
-                                ],
-                                "true3": [
-                                    {
-                                        "command": "EVENT_ACTOR_SET_POSITION",
-                                        "args": {
-                                            "actorId": "$self$",
-                                            "x": {
-                                                "type": "number",
-                                                "value": 10
-                                            },
-                                            "y": {
-                                                "type": "number",
-                                                "value": 16
-                                            }
-                                        },
-                                        "id": "eb0e7225-48aa-4967-ab75-1bfbe71bc897"
-                                    }
-                                ],
-                                "true4": [
-                                    {
-                                        "command": "EVENT_ACTOR_SET_POSITION",
-                                        "args": {
-                                            "actorId": "$self$",
-                                            "x": {
-                                                "type": "number",
-                                                "value": 12
-                                            },
-                                            "y": {
-                                                "type": "number",
-                                                "value": 16
-                                            }
-                                        },
-                                        "id": "47723017-0cea-4736-b631-a37b7211c1a8"
-                                    }
-                                ],
-                                "true5": [
-                                    {
-                                        "command": "EVENT_ACTOR_SET_POSITION",
-                                        "args": {
-                                            "actorId": "$self$",
-                                            "x": {
-                                                "type": "number",
-                                                "value": 14
-                                            },
-                                            "y": {
-                                                "type": "number",
-                                                "value": 16
-                                            }
-                                        },
-                                        "id": "17ac888a-4b36-4ffc-97ea-3a8203898d8b"
-                                    }
-                                ],
-                                "true6": [],
-                                "true7": [],
-                                "true8": [],
-                                "true9": [],
-                                "true10": [],
-                                "true11": [],
-                                "true12": [],
-                                "true13": [],
-                                "true14": [],
-                                "true15": [],
-                                "false": [
-                                    {
-                                        "command": "EVENT_ACTOR_HIDE",
-                                        "args": {
-                                            "actorId": "$self$"
-                                        },
-                                        "id": "3c0d6b08-010c-4b53-af39-2f62cf0bc4a2"
-                                    }
-                                ]
-                            },
-                            "id": "13191c31-22df-462d-9307-f7e58a5a8f4c"
-                        }
-                    ],
-                    "updateScript": [],
-                    "hit1Script": [],
-                    "hit2Script": [],
-                    "hit3Script": [],
-                    "id": "3ce2248c-cd71-423f-8050-d0ecc74c9534",
-                    "x": 0,
-                    "y": 1
-                }
-            ],
+            "y": 226,
+            "actors": [],
             "triggers": [
                 {
                     "name": "Right",
@@ -394,7 +163,7 @@
                         }
                     ],
                     "id": "44e04ddc-0b2a-4d62-8fde-1e0a10bf7949",
-                    "x": 17,
+                    "x": 16,
                     "y": 16,
                     "width": 1,
                     "height": 1,
@@ -418,7 +187,7 @@
                         }
                     ],
                     "id": "10603148-8622-44a9-8a3f-f473a5c8d313",
-                    "x": 2,
+                    "x": 1,
                     "y": 16,
                     "width": 1,
                     "height": 1,
@@ -428,27 +197,12 @@
                 {
                     "name": "Weapon 1",
                     "id": "29f4b1c8-300d-401d-882a-a9049dd3dd2c",
-                    "x": 4,
+                    "x": 3,
                     "y": 15,
                     "symbol": "trigger_2",
                     "width": 2,
                     "height": 2,
                     "script": [
-                        {
-                            "command": "EVENT_ACTOR_SET_POSITION",
-                            "args": {
-                                "actorId": "3ce2248c-cd71-423f-8050-d0ecc74c9534",
-                                "x": {
-                                    "type": "number",
-                                    "value": 4
-                                },
-                                "y": {
-                                    "type": "number",
-                                    "value": 16
-                                }
-                            },
-                            "id": "47a1558d-6714-49c3-ae03-08a5674eeeb4"
-                        },
                         {
                             "command": "EVENT_SET_VALUE",
                             "args": {
@@ -466,27 +220,12 @@
                 {
                     "name": "Weapon 2",
                     "id": "732ccb80-69d1-44c8-9c39-30c074e056b3",
-                    "x": 6,
+                    "x": 5,
                     "y": 15,
                     "symbol": "trigger_3",
                     "width": 2,
                     "height": 2,
                     "script": [
-                        {
-                            "command": "EVENT_ACTOR_SET_POSITION",
-                            "args": {
-                                "actorId": "3ce2248c-cd71-423f-8050-d0ecc74c9534",
-                                "x": {
-                                    "type": "number",
-                                    "value": 6
-                                },
-                                "y": {
-                                    "type": "number",
-                                    "value": 16
-                                }
-                            },
-                            "id": "b5d379ae-2b69-436d-a0fc-59ccf8d341b9"
-                        },
                         {
                             "command": "EVENT_SET_VALUE",
                             "args": {
@@ -497,6 +236,98 @@
                                 }
                             },
                             "id": "e7e5b44c-2a97-4fe4-bee6-ed7dffcfdc9c"
+                        }
+                    ],
+                    "leaveScript": []
+                },
+                {
+                    "name": "Weapon 2",
+                    "id": "bbbb6744-5039-4620-aa21-1cf50df6fd6c",
+                    "x": 7,
+                    "y": 15,
+                    "symbol": "trigger_4",
+                    "width": 2,
+                    "height": 2,
+                    "script": [
+                        {
+                            "command": "EVENT_SET_VALUE",
+                            "args": {
+                                "variable": "6",
+                                "value": {
+                                    "type": "number",
+                                    "value": 5
+                                }
+                            },
+                            "id": "6d2aedcf-ccb4-4396-8502-4ecbd3ba9ec5"
+                        }
+                    ],
+                    "leaveScript": []
+                },
+                {
+                    "name": "Weapon 2",
+                    "id": "7a6edabb-6768-4d41-96c9-d257ab8abaf6",
+                    "x": 9,
+                    "y": 15,
+                    "symbol": "trigger_5",
+                    "width": 2,
+                    "height": 2,
+                    "script": [
+                        {
+                            "command": "EVENT_SET_VALUE",
+                            "args": {
+                                "variable": "6",
+                                "value": {
+                                    "type": "number",
+                                    "value": 6
+                                }
+                            },
+                            "id": "4784a66c-6ded-4498-851e-b6ce3c27a8fc"
+                        }
+                    ],
+                    "leaveScript": []
+                },
+                {
+                    "name": "Weapon 2",
+                    "id": "b4b332a7-f438-4da0-8cf5-a31b28305506",
+                    "x": 11,
+                    "y": 15,
+                    "symbol": "trigger_6",
+                    "width": 2,
+                    "height": 2,
+                    "script": [
+                        {
+                            "command": "EVENT_SET_VALUE",
+                            "args": {
+                                "variable": "6",
+                                "value": {
+                                    "type": "number",
+                                    "value": 7
+                                }
+                            },
+                            "id": "73bde7e0-40ed-4701-be1b-054371cc2fc9"
+                        }
+                    ],
+                    "leaveScript": []
+                },
+                {
+                    "name": "Weapon 2",
+                    "id": "a74790be-ff32-445d-aa77-faf562a16644",
+                    "x": 13,
+                    "y": 15,
+                    "symbol": "trigger_7",
+                    "width": 2,
+                    "height": 2,
+                    "script": [
+                        {
+                            "command": "EVENT_SET_VALUE",
+                            "args": {
+                                "variable": "6",
+                                "value": {
+                                    "type": "number",
+                                    "value": 8
+                                }
+                            },
+                            "id": "8c4f6cd4-159b-45e4-8bcd-02bc62f7fd45"
                         }
                     ],
                     "leaveScript": []
@@ -1223,22 +1054,22 @@
                     "args": {
                         "variable": "7",
                         "flag1": true,
-                        "flag2": false,
-                        "flag3": false,
-                        "flag4": false,
-                        "flag5": false,
-                        "flag6": false,
-                        "flag7": false,
-                        "flag8": false,
-                        "flag9": false,
+                        "flag2": true,
+                        "flag3": true,
+                        "flag4": true,
+                        "flag5": true,
+                        "flag6": true,
+                        "flag7": true,
+                        "flag8": true,
+                        "flag9": true,
                         "flag10": true,
-                        "flag11": false,
-                        "flag12": false,
-                        "flag13": false,
-                        "flag14": false,
-                        "flag15": false,
-                        "flag16": false,
-                        "__collapse": true
+                        "flag11": true,
+                        "flag12": true,
+                        "flag13": true,
+                        "flag14": true,
+                        "flag15": true,
+                        "flag16": true,
+                        "__collapse": false
                     },
                     "id": "326af1cd-16de-4220-b4e7-07fa0e5dd027"
                 },
@@ -1246,9 +1077,9 @@
                     "command": "EVENT_ADD_FLAGS",
                     "args": {
                         "variable": "8",
-                        "flag1": false,
+                        "flag1": true,
                         "flag2": true,
-                        "flag3": false,
+                        "flag3": true,
                         "flag4": false,
                         "flag5": false,
                         "flag6": false,
@@ -1262,7 +1093,7 @@
                         "flag14": false,
                         "flag15": false,
                         "flag16": false,
-                        "__collapse": true
+                        "__collapse": false
                     },
                     "id": "02f23d7d-f4e5-47fd-a9b1-733503862fb3"
                 },
@@ -1321,9 +1152,33 @@
                         "value": {
                             "type": "number",
                             "value": 10
-                        }
+                        },
+                        "__collapse": true
                     },
                     "id": "c8feaf68-b332-494a-a3f2-c99cba650ac3"
+                },
+                {
+                    "command": "EVENT_ADD_FLAGS",
+                    "args": {
+                        "variable": "12",
+                        "flag1": true,
+                        "flag2": true,
+                        "flag3": true,
+                        "flag4": true,
+                        "flag5": true,
+                        "flag6": true,
+                        "flag7": true,
+                        "flag8": false,
+                        "flag9": false,
+                        "flag10": false,
+                        "flag11": false,
+                        "flag12": false,
+                        "flag13": false,
+                        "flag14": false,
+                        "flag15": false,
+                        "flag16": false
+                    },
+                    "id": "4fc3653d-4fe3-483d-8b48-27b6e1eaf541"
                 },
                 {
                     "command": "EVENT_WAIT",
@@ -1351,7 +1206,7 @@
             "playerHit3Script": [],
             "id": "a3ac0799-e4ef-4f08-a0eb-f7b8751bd2dc",
             "x": 79.5,
-            "y": 31.5,
+            "y": 31,
             "actors": [],
             "triggers": [],
             "symbol": "scene_4",
@@ -2636,11 +2491,6 @@
             "name": "Rupees"
         },
         {
-            "id": "ca3eeff0-9585-4e19-9b7f-803570a8f51a__L0",
-            "name": "Local 0",
-            "symbol": "var_local_0"
-        },
-        {
             "id": "6",
             "name": "_Inventory Interaction",
             "symbol": "var_inventory_interaction"
@@ -2672,8 +2522,8 @@
         },
         {
             "id": "12",
-            "name": "Inventory Highlighted",
-            "symbol": "var_inventory_highlighted_0"
+            "name": "Overworld Flags",
+            "symbol": "var_overworld_flags"
         },
         {
             "id": "13",
@@ -2681,19 +2531,49 @@
             "symbol": "var_variable_13"
         },
         {
-            "id": "28bb7bf9-4928-4d41-a21d-22735d22bb7b__L0",
-            "name": "var selected",
-            "symbol": "var_var_selected"
-        },
-        {
             "id": "14",
             "name": "Variable 14",
             "symbol": "var_variable_14"
         },
         {
+            "id": "ca3eeff0-9585-4e19-9b7f-803570a8f51a__L0",
+            "name": "Local 0",
+            "symbol": "var_local_0"
+        },
+        {
+            "id": "28bb7bf9-4928-4d41-a21d-22735d22bb7b__L0",
+            "name": "var selected",
+            "symbol": "var_var_selected"
+        },
+        {
             "id": "a3ac0799-e4ef-4f08-a0eb-f7b8751bd2dc__L0",
             "name": "Local 0",
             "symbol": "var_local_1"
+        },
+        {
+            "id": "44e04ddc-0b2a-4d62-8fde-1e0a10bf7949__L0",
+            "name": "CursorX",
+            "symbol": "var_cursorx"
+        },
+        {
+            "id": "44e04ddc-0b2a-4d62-8fde-1e0a10bf7949__L1",
+            "name": "CursorY",
+            "symbol": "var_cursory"
+        },
+        {
+            "id": "15",
+            "name": "Variable 15",
+            "symbol": "var_variable_15"
+        },
+        {
+            "id": "44e04ddc-0b2a-4d62-8fde-1e0a10bf7949__L2",
+            "name": "Can Scroll Right",
+            "symbol": "var_can_scroll_right"
+        },
+        {
+            "id": "44e04ddc-0b2a-4d62-8fde-1e0a10bf7949__L3",
+            "name": "weapon Offset",
+            "symbol": "var_weapon_offset"
         }
     ],
     "engineFieldValues": [
